@@ -1,10 +1,10 @@
-# 🧠 RAG Chatbot using Streamlit
+# RAG Chatbot using Streamlit
 
-A simple RAG (Retrieval-Augmented Generation) chatbot built using Python and Streamlit.
+A simple Retrieval-Augmented Generation (RAG) chatbot built using Python and Streamlit.
 
 ---
 
-# 📌 Features
+## Features
 
 * Simple chatbot interface
 * Semantic search using embeddings
@@ -13,7 +13,7 @@ A simple RAG (Retrieval-Augmented Generation) chatbot built using Python and Str
 
 ---
 
-# 🛠 Technologies Used
+## Technologies Used
 
 * Python
 * Streamlit
@@ -23,9 +23,9 @@ A simple RAG (Retrieval-Augmented Generation) chatbot built using Python and Str
 
 ---
 
-# 📂 Project Structure
+## Project Structure
 
-```text id="dr2b7m"
+```text id="j4v7ak"
 RAG_Chatbot/
 │
 ├── app.py
@@ -34,11 +34,11 @@ RAG_Chatbot/
 
 ---
 
-# ⚙️ Installation
+## Installation
 
-Install required libraries:
+Install the required libraries:
 
-```bash id="2k3vb9"
+```bash id="7i6hm5"
 pip install streamlit
 pip install sentence-transformers
 pip install scikit-learn
@@ -47,36 +47,36 @@ pip install numpy
 
 ---
 
-# ▶️ Run the Project
+## Run the Project
 
-```bash id="n2vt3n"
+```bash id="x5b0ko"
 streamlit run app.py
 ```
 
-If not working:
+If the above command does not work:
 
-```bash id="w5w5l4"
+```bash id="4n9fza"
 python -m streamlit run app.py
 ```
 
 ---
 
-# 💻 app.py Code
+## app.py Code
 
-```python id="y76k4f"
+```python id="o1q4zc"
 import streamlit as st
 from sentence_transformers import SentenceTransformer
 from sklearn.metrics.pairwise import cosine_similarity
 import numpy as np
 
 # Page title
-st.title("🧠 RAG Chatbot")
+st.title("RAG Chatbot")
 
 # Knowledge base
 documents = [
     "Machine learning is a subset of artificial intelligence.",
     "Deep learning uses neural networks.",
-    "NLP processes human language.",
+    "Natural Language Processing processes human language.",
     "Large Language Models are trained on huge datasets.",
     "RAG combines retrieval and generation."
 ]
@@ -119,25 +119,25 @@ if st.button("Get Answer"):
 
 ---
 
-# 🧪 Sample Questions
+## Sample Questions
 
-```text id="4q1ytw"
+```text id="98ms4v"
 What is machine learning?
 ```
 
-```text id="nfn06j"
+```text id="jjlwm2"
 Explain NLP
 ```
 
-```text id="kz4h6j"
+```text id="6d2uql"
 What is RAG?
 ```
 
 ---
 
-# 🔍 How It Works
+## How It Works
 
-```text id="cahgvi"
+```text id="k3kekj"
 User Question
       ↓
 Create Embedding
@@ -149,6 +149,6 @@ Retrieve Best Answer
 
 ---
 
-# 🎯 Conclusion
+## Conclusion
 
 This project demonstrates a basic RAG chatbot using semantic search and embeddings.
